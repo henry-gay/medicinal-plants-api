@@ -6,13 +6,13 @@ The following entities and relationships form the database structure:
 
 - ```id``` (Primary Key)
 
-- ```common_name```
+- ```common_name``` (String)
 
-- ```scientific_name```
+- ```scientific_name``` (String)
 
-- ```description```
+- ```description``` (String)
 
-- ```habitat_cultivation```
+- ```habitat_cultivation``` (String)
 
 ## PlantPart
 
@@ -20,19 +20,19 @@ The following entities and relationships form the database structure:
 
 - ```plant_id``` (Foreign Key to Plant)
 
-- ```name```
+- ```name``` (String)
 
-- ```description```
+- ```description``` (String)
 
 ## Constituent
 
 - ```id``` (Primary Key)
 
-- ```name```
+- ```name``` (String)
 
-- ```type```
+- ```type``` (String)
 
-- ```effects```
+- ```effects``` (String)
 
 ## PlantConstituent (Many-to-Many Relationship)
 
@@ -48,9 +48,9 @@ The following entities and relationships form the database structure:
 
 - ```plant_id``` (Foreign Key to Plant)
 
-- ```use_case```
+- ```use_case``` (String)
 
-- ```details```
+- ```details``` (String)
 
 ## Preparation
 
@@ -58,6 +58,6 @@ The following entities and relationships form the database structure:
 
 - ```plant_id``` (Foreign Key to Plant)
 
-- ```method```
+- ```method``` (String)
 
-- ```instructions```
+- ```instructions``` (String)
